@@ -1,0 +1,142 @@
+body {
+    background-color: #01579b;
+}
+
+body.desaturate {
+    background-color: #4a4a4a;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a.refresh {
+    text-decoration: none;
+    color: #fff;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.desaturate .bg {
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */ 
+    filter: url(resources.svg#desaturate); /* Gecko */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+}
+
+.bg {
+    background: #01579b 0 0 no-repeat, url(bg.jpg);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(1, 87, 155, 1) 100%), url(bg.jpg);   /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0)), color-stop(100%,rgba(1, 87, 155, 1))), url(bg.jpg); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(1, 87, 155, 1) 100%), url(bg.jpg); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(1, 87, 155, 1) 100%), url(bg.jpg); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%,rgba(1, 87, 155, 1) 100%), url(bg.jpg); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(1, 87, 155, 1) 100%), url(bg.jpg); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#01579b',GradientType=0 ); /* IE6-9 */
+    height: 640px;
+}
+
+.wrapper {
+    color: #fff;
+    width: 24rem;
+    margin: 0 auto;
+    padding-top: .5rem;
+}
+
+.wrapper .current-info,
+.wrapper .current,
+.wrapper .type {
+    display: inline-block;
+}
+
+.wrapper .current-info .current {
+    font-family: "Segoe UI Light", "Segoe UI", Arial, Sans-Serif;
+    font-size: 16rem;
+    line-height: 1;
+    margin-left: -1.2rem;
+}
+
+.wrapper .current-info .type,
+.wrapper .current-info .location {
+    font-family: "Segoe UI Light", "Segoe UI", Arial, Sans-Serif;
+    font-size: 6rem;
+    line-height: 1.167;
+    vertical-align: top;
+    margin-top: 1.5rem;
+}
+
+.wrapper .current-info .location {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: -1.4rem;
+}
+
+.wrapper .weather-info>span {
+    font-family: "Segoe UI Light", "Segoe UI", Arial, Sans-Serif;
+    font-size: 3.2rem;
+    line-height: 1.167;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.wrapper .weather-info .last-updated {
+    margin-bottom: 1.5rem;
+}
+
+.wrapper .weather-info ul,
+.wrapper .weather-info .last-updated {
+    font-family: "Segoe UI", "Segoe UI", Arial, Sans-Serif;
+    font-size: 1.3rem;
+    line-height: 1.384;
+    color: #fff;
+}
+
+.wrapper .weather-info ul li {
+    display: inline-block;
+    width: 100%;
+}
+
+.wrapper .weather-info ul span,
+.wrapper .weather-info .last-updated {
+    font-family: "Segoe UI Light", "Segoe UI", Arial, Sans-Serif;
+    opacity: .8;
+    padding-right: .3rem;
+}
+
+@font-face {
+    font-family: "Segoe UI Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Light'), url(fonts/segoeuilight.woff2) format("woff2"), url(fonts/segoeuilight.woff) format("woff"), url(fonts/segoeuilight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI'), url(fonts/segoeui.woff2) format("woff2"), url(fonts/segoeui.woff) format("woff"), url(fonts/segoeui.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Segoe UI Semibold";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Semibold'), url(fonts/segoeuisemibold.woff2) format("woff2"), url(fonts/segoeuisemibold.woff) format("woff"), url(fonts/segoeuisemibold.ttf) format("truetype");
+}

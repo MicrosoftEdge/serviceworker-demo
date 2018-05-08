@@ -1,0 +1,15 @@
+CACHE MANIFEST
+# 2018-05-08 v2
+ 
+CACHE:
+./styles.css
+./bg.jpg
+./weather.json
+./common.js
+./main.js
+ 
+NETWORK:
+*
+ 
+FALLBACK:
+./contact-us.html ./fallback.html

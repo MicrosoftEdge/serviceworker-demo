@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="desaturate">
+        <div class="bg">
+            <div class="wrapper" style="visibility: hidden">
+                <div class="current-info">
+                    <span class="location">Seattle, WA</span>
+                    <span class="current"></span>
+                    <div class="type">°F</div>
+                </div>
+                <div class="weather-info">
+                    <span class="description"></span>
+                    <span class="last-updated"><a href="#" class="refresh">&#8635;</a> Updated as of <span class="time"></span></span>
+                    <ul class="details"></ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="common.js"></script>
+        <script src="util.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
