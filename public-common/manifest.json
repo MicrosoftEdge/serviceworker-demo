@@ -1,0 +1,53 @@
+{
+  "name": "Weather",
+  "display": "standalone",
+  "theme_color": "#01579b",
+  "orientation": "any",
+  "background_color": "#4a4a4a",
+  "icons": [
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "images/icon-256.png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "images/icon-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "images/icon-96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/icon-72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "images/icon-64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "images/icon-48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/icon-32.png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "images/icon-16.png",
+      "sizes": "16x16"
+    }
+  ]
+}
