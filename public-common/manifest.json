@@ -4,6 +4,7 @@
   "theme_color": "#01579b",
   "orientation": "any",
   "background_color": "#4a4a4a",
+  "start_url": "",
   "icons": [
     {
       "src": "images/icon-512.png",
