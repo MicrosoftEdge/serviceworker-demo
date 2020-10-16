@@ -90,7 +90,7 @@ app.get(getRegExp('images/(.*)'), function(req, res) {
 });
 app.get(getRegExp('(index.html|bg.jpg|fallback.html|styles.css|common.js|util.js)?'), function(req, res) {
     res.sendFile(__dirname + '/public-common/' + (req.params[1] === undefined ? 'index.html' : req.params[1]));
-});
+}); 
 
 app.listen(port, function() {
     console.log('Server listening on port ' + port);
