@@ -79,8 +79,14 @@ app.get('/appcache(/index.html)?', function(req, res) {
     res.sendFile(__dirname + '/public/' + req.params[1] + '/index.html');
 });
 
+app.get(getRegExp('manifest.json'), function(req, res) {
+    res.sendFile(__dirname + '/public-common/manifest.json');
+});
 app.get(getRegExp('fonts/(.*)'), function(req, res) {
-    res.sendFile(__dirname + '/public-common/fonts/' + req.params[1]);
+  res.sendFile(__dirname + '/public-common/fonts/' + req.params[1]);
+});
+app.get(getRegExp('images/(.*)'), function(req, res) {
+  res.sendFile(__dirname + '/public-common/images/' + req.params[1]);
 });
 app.get(getRegExp('(index.html|bg.jpg|fallback.html|styles.css|common.js|util.js)?'), function(req, res) {
     res.sendFile(__dirname + '/public-common/' + (req.params[1] === undefined ? 'index.html' : req.params[1]));
